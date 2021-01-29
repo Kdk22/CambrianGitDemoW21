@@ -47,5 +47,8 @@ public static void main(String[] args){
   }else {
      Student stu = new Student(f_name, l_name, score);
   }
+  if (score < 80){
+    System.out.println("You should get additional " + (80 - score) + " marks to get grade A. Better luck next time. ");
+  }
   }
 }
