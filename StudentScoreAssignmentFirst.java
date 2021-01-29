@@ -4,11 +4,13 @@ class Student {
   String first_name;
   String last_name;
   double grade;
+  // variable declaration
 
   public Student(String first_name, String last_name, double score) {
     this.first_name = first_name;
     this.last_name = last_name;
     this.grade = score;
+    // referencing parameters to class or global variables
 
     String grade_result;
     
@@ -44,8 +46,10 @@ public static void main(String[] args){
   System.out.println(score);
   if (0 > score || score > 100){
     System.out.println("Please enter a marks from 0 to 100");
+    // if marks is not between 0 to 100
   }else {
      Student stu = new Student(f_name, l_name, score);
+     // run only if marks is between 0 t  100
   }
   if (score < 80){
     System.out.println("You should get additional " + (80 - score) + " marks to get grade A. Better luck next time. ");
