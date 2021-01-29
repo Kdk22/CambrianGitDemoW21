@@ -12,7 +12,7 @@ class Student {
 
     String grade_result;
     
-    String result = "Hello " + first_name + " " + last_name + "! Your Grade is ";
+    String result = "Hello ! " + first_name + " " + last_name + ". Your Grade is ";
     if(100 >= grade && grade >= 80){
       System.out.println(result + 'A');
     } else if(80 > grade && grade >= 70) {
@@ -34,18 +34,18 @@ public static void main(String[] args){
   Scanner in_first_name = new Scanner(System.in);
   System.out.println("Enter First Name");
   String f_name = in_first_name.nextLine();
-  if(f_name instanceof String){
-    System.out.println("Please Enter valid name");
-  }
   Scanner in_last_name = new Scanner(System.in);
   System.out.println("Enter Last Name");
   String l_name =  in_last_name.nextLine();
 
   Scanner in = new Scanner(System.in);
-  System.out.println("Enter Marks from 0 to 100");
+  System.out.println("Enter a marks from 0 to 100");
   double score =  in.nextDouble();
-
-  Student stu = new Student(f_name, l_name, score);
-
+  System.out.println(score);
+  if (0 > score || score > 100){
+    System.out.println("Please enter a marks from 0 to 100");
+  }else {
+     Student stu = new Student(f_name, l_name, score);
+  }
   }
 }
