@@ -8,10 +8,13 @@ class Encryption
     StringBuffer encryptedText = new StringBuffer();
     for (int i=0; i<text.length(); i++)
     {
-        System.out.println(text.charAt(i));
-        char ch = (char)(((int)text.charAt(i) + val) % 26 );
-        System.out.println("Text is : " +ch);
-        encryptedText.append(ch);
+      if (Character.isUpperCase(text.charAt(i))){  
+        char charText = (char)(((int)text.charAt(i) + val -65) % 26 + 65 );
+        encryptedText.append(charText);
+      } else {
+        char charText = (char)(((int)text.charAt(i) + val -97) % 26 + 97);
+        encryptedText.append(charText);
+      }
     }
     return encryptedText;
   }
@@ -20,8 +23,14 @@ class Encryption
     StringBuffer decryptedText = new StringBuffer();
     for (int i=0; i<text.length(); i++)
     {
-      char ch = (char)(((int)text.charAt(i) - val) % 26 );
-      decryptedText.append(ch);
+      if (Character.isUpperCase(text.charAt(i))){
+      char charText = (char)(((int)text.charAt(i) - val -65) % 26 +65 );
+      decryptedText.append(charText);
+      }
+      else {
+        char charText = (char)(((int)text.charAt(i) - val - 97) % 26 +97);
+        decryptedText.append(charText);
+      }
     }
     return decryptedText;
   }
