@@ -86,7 +86,8 @@ public class RollDice {
       d8.roll();
       d7.roll();
       if((d3.getSideUp() == d4.getSideUp()) && ( d4.getSideUp() == d5.getSideUp()) &&
-          ( d5.getSideUp()==d7.getSideUp())){
+          ( d5.getSideUp()==d7.getSideUp()) &&(d8.getSideUp() == d7.getSideUp() )){
+        //        System.out.println(d3.getSideUp()+ " " +  d4.getSideUp()+ " " +d5.getSideUp()+ " "  +d7.getSideUp()+ " " + d8.getSideUp());
         System.out.println("It took " +count + " rolls to  get Yahtzee");
         break;
       }
