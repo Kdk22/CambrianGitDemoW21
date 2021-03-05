@@ -1,14 +1,11 @@
-<layout>
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
         android:id="@+id/activity_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin"
-        tools:context="com.sample.foo.samplecalculator.MainActivity">
+        tools:context="com.example.calculator.MainActivity">
 
         <TextView
             android:id="@+id/infoTextView"
@@ -30,27 +27,29 @@
 
         <Button
             android:id="@+id/buttonZero"
-            style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/editText"
-            android:text="0"
-            android:textSize="30sp"
             android:layout_marginLeft="10dp"
+            android:style="@style/ButtonStlye123"
+            android:text="0"
+            android:textColor="@android:color/black"
+            app:backgroundTint="@android:color/darker_gray"
+            android:textSize="30sp" />
 
-            />
         <Button
             android:id="@+id/buttonOne"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/editText"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:layout_toRightOf="@id/buttonZero"
             android:text="1"
             android:textSize="30sp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            />
+            android:textColor="@android:color/black"
+            app:backgroundTint="@android:color/darker_gray" />
         <Button
             android:id="@+id/buttonTwo"
             style="@style/Widget.AppCompat.Button.Borderless"
@@ -61,7 +60,8 @@
             android:text="2"
             android:textSize="30sp"
             android:layout_marginRight="10dp"
-
+            android:textColor="@android:color/black"
+            app:backgroundTint="@android:color/darker_gray"
             />
         <Button
             android:id="@+id/buttonThree"
@@ -71,7 +71,10 @@
             android:layout_below="@id/editText"
             android:layout_toRightOf="@id/buttonTwo"
             android:text="3"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:textColor="@android:color/black"
+            app:backgroundTint="@android:color/darker_gray"
+            />
         <Button
             android:id="@+id/buttonFour"
             style="@style/Widget.AppCompat.Button.Borderless"
@@ -82,6 +85,8 @@
             android:textSize="30sp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
+            app:backgroundTint="@android:color/darker_gray"
             />
         <Button
             android:id="@+id/buttonFive"
@@ -93,6 +98,8 @@
             android:text="5"
             android:textSize="30sp"
             android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
+            app:backgroundTint="@android:color/darker_gray"
             />
         <Button
             android:id="@+id/buttonSix"
@@ -104,6 +111,8 @@
             android:text="6"
             android:textSize="30sp"
             android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
+            app:backgroundTint="@android:color/darker_gray"
             />
         <Button
             android:id="@+id/buttonSeven"
@@ -115,6 +124,8 @@
             android:text="7"
             android:textSize="30sp"
             android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
+            app:backgroundTint="@android:color/darker_gray"
             />
         <Button
             android:id="@+id/buttonEight"
@@ -126,6 +137,8 @@
             android:textSize="30sp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
+            app:backgroundTint="@android:color/darker_gray"
             />
 
         <Button
@@ -138,6 +151,8 @@
             android:text="9"
             android:textSize="30sp"
             android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
+            app:backgroundTint="@android:color/darker_gray"
             />
 
         <Button
@@ -150,6 +165,8 @@
             android:text="."
             android:textSize="30sp"
             android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
+            app:backgroundTint="@android:color/darker_gray"
             />
         <Button
             android:id="@+id/buttonDivide"
@@ -160,7 +177,10 @@
             android:text="/"
             android:textSize="30sp"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
+            app:backgroundTint="@android:color/darker_gray"
+            />
 
         <Button
             android:id="@+id/buttonEqual"
@@ -170,9 +190,11 @@
 
             android:layout_alignRight="@id/buttonAdd"
             android:layout_below="@id/buttonAdd"
-            android:layout_marginTop="@dimen/activity_vertical_margin"
             android:text="="
-            android:textSize="50sp" />
+            android:textSize="50sp"
+            android:textColor="@android:color/black"
+            app:backgroundTint="@android:color/darker_gray"
+            />
 
 
 
@@ -187,6 +209,8 @@
             android:textSize="30sp"
             android:layout_marginLeft="0dp"
             android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
+            app:backgroundTint="@android:color/darker_gray"
             />
 
         <Button
@@ -199,7 +223,9 @@
             android:text="-"
             android:textSize="30sp"
             android:layout_marginLeft="0dp"
-            android:layout_marginRight="10dp" />
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
+            app:backgroundTint="@android:color/darker_gray"/>
 
         <Button
             android:id="@+id/buttonAdd"
@@ -209,7 +235,9 @@
             android:layout_alignTop="@id/buttonSubtract"
             android:layout_toRightOf="@id/buttonSubtract"
             android:text="+"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:textColor="@android:color/black"
+            app:backgroundTint="@android:color/darker_gray" />
 
         <Button
             android:id="@+id/buttonClear"
@@ -219,6 +247,8 @@
             android:layout_toRightOf="@id/buttonDot"
             android:layout_below="@id/buttonSeven"
             android:text="C"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:textColor="@android:color/black"
+            app:backgroundTint="@android:color/darker_gray" />
     </RelativeLayout>
 </layout>
