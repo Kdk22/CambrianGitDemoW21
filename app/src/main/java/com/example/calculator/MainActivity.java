@@ -6,9 +6,6 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
-import android.widget.EditText;
-
 public class MainActivity extends AppCompatActivity {
 
     Button buttonZero, buttonOne, buttonTwo, buttonThree, buttonFour, buttonFive, buttonSix, buttonSeven, buttonEight, buttonNine, buttonDot, buttonDivide, buttonEqual, buttonMultiply, buttonSubtract, buttonAdd, buttonClear;
@@ -146,14 +143,14 @@ public class MainActivity extends AppCompatActivity {
         buttonEqual.setOnClickListener((new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Val1 = Float.parseFloat(editText.getText() + "");
+                Val2= Float.parseFloat(editText.getText() + "");
 
                 if (valSub == true){
                     float calVal = Val1 - Val2;
                     editText.setText(Float.toString(calVal));
                 }
                 if (valDiv == true){
-                    float calVal = Val1 + Val2;
+                    float calVal = Val1 / Val2;
                     editText.setText(Float.toString(calVal));
                 }
                 if (valMul == true){
