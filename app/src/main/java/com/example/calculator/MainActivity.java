@@ -147,18 +147,19 @@ public class MainActivity extends AppCompatActivity {
 
                 if (valSub == true){
                     float calVal = Val1 - Val2;
-                    editText.setText(Float.toString(calVal));
+                    editText.setText(Float.toString(Val1) + " - " +Float.toString(Val2) + " = " + Float.toString(calVal));
                 }
                 if (valDiv == true){
                     float calVal = Val1/Val2;
-                    editText.setText(Float.toString(calVal));
+                    editText.setText(Float.toString(Val1) + " / " +Float.toString(Val2) + " = " + Float.toString(calVal));
                 }
                 if (valMul == true){
                     float calVal = Val1 * Val2;
-                    editText.setText(Float.toString(calVal));
+                    editText.setText(Float.toString(Val1) + " * " +Float.toString(Val2) + " = " + Float.toString(calVal));
                 }
                 if (valAdd == true){
-                    editText.setText(Val1 + Val2 + "");
+                    float calVal = Val1 + Val2;
+                    editText.setText(Float.toString(Val1) + " + " +Float.toString(Val2) + " = " + Float.toString(calVal));
                 }
             }
         }));
