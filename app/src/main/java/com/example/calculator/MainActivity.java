@@ -150,7 +150,7 @@ public class MainActivity extends AppCompatActivity {
                     editText.setText(Float.toString(calVal));
                 }
                 if (valDiv == true){
-                    float calVal = Val1 / Val2;
+                    float calVal = Val1/Val2;
                     editText.setText(Float.toString(calVal));
                 }
                 if (valMul == true){
